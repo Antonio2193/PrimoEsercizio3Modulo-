@@ -1,0 +1,49 @@
+/* Per testare i Selettori CSS puoi cambiare all'elemento che stai cercando di selezionare il colore, colore di sfondo, aggiungere un bordo colorato ecc. Se il selettore è corretto vedrai applicare quello stile all'elemento, se non succede significa che il selettore non è corretto o qualche altra regola CSS sta prevalendo. Controlla sempre dall'inspector del browser.
+/* ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron*/
+.jumbotron>div h1{
+    color: red;
+}
+/* ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar*/
+.nav>span{
+    color: red;
+}
+/* ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+.jumbotron a{
+    color: red;
+}
+/* ESERCIZIO 4) Crea un selettore per selezionare il primo blog post*/
+.blog-post:first-of-type{
+    background-color: blue;
+}
+/* ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
+.blog-post:first-of-type hr{
+    background-color:yellow;
+}
+/* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar*/
+.nav:first-of-type span:nth-child(even){
+    color: green;
+}
+/* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")*/
+.blog-sidebar div:nth-of-type(2) ol>li a{
+    color: red;
+}
+/* ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post */
+.blog-post:nth-of-type(2) p:first-of-type a{
+    color: brown;
+}
+/* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post*/
+.blog-post:nth-of-type(3) ul li:nth-child(2){
+    color: red;
+}
+/* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
+footer~a{
+    color: red;
+}
+/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso*/
+.blog-main nav:last-of-type a:nth-child(2){
+    color: red;
+}
+/* ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer */ 
+footer p a:last-of-type{
+    color: chartreuse;
+}
